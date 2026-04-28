@@ -17,6 +17,8 @@ class Calculator:
         return a / b
     
     def power(base,exp):
+        if (base == 0 and exp == 0):
+            raise ValueError
         return pow(base,exp)
     
     def square_root(a):
