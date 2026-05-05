@@ -252,10 +252,11 @@ class TestFloorDivide:
 
     def test_floor_divide_two_floats(self,calc):
         assert calculator.floor_divide(6.7,4.2) == 1
-
-class TestIntegration:
+    
     def test_floor_divide_boundary(self,calc):
         assert calculator.floor_divide(2222222222222,1111111111111) == 2
+
+class TestIntegration:
 
     def test_integration_add_and_subtract(self,calc):
         assert calculator.add(calculator.subtract(10,5), calculator.subtract(27,20)) == 12
@@ -328,3 +329,7 @@ class TestIntegration:
     
     def test_integration_modulus_and_floor_divide(self,calc):
         assert calculator.modulus(calculator.floor_divide(100,6),calculator.floor_divide(100,12)) == 0
+
+class TestGeorgia:
+    def test_georgia_success(self,calc):
+        assert calculator.add("Geo","rgia") == "Georgia"
